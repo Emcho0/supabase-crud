@@ -1,3 +1,4 @@
+import "@fontsource-variable/dm-sans/index";
 import { Provider } from "@/components/ui/provider.tsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
