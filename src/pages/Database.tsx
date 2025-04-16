@@ -2,7 +2,12 @@ import supabase from "@/utils/supabase";
 import { Box, Table } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 function Database() {
-  const [instruments, setInstruments] = useState([]);
+  type Instrument = {
+    id: number;
+    ime: string;
+    cijena: number;
+  };
+  const [instruments, setInstruments] = useState<Instrument[]>([]);
 
   useEffect(() => {
     getInstruments();
