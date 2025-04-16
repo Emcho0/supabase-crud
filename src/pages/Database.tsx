@@ -20,7 +20,6 @@ function Database() {
 
   return (
     <>
-      {/* Background always fills the viewport */}
       <Box
         position="fixed"
         top={0}
@@ -35,7 +34,7 @@ function Database() {
         }}
         zIndex={-1}
       />
-      {/* Content sits above the background */}
+
       <Box
         minHeight="100vh"
         width="100vw"
