@@ -46,9 +46,15 @@ export default function Nav() {
           onClick={toggleColorMode}
           variant="ghost"
           size="md"
+          _hover={{
+            background: "#42608A",
+          }}
           color="#C6DFEC"
           _dark={{
             color: "#BDBFCB",
+            _hover: {
+              background: "#597BC0",
+            },
           }}
         >
           {colorMode === "light" ? <LuSun /> : <LuMoon />}
