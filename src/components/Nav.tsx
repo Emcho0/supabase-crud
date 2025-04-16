@@ -22,6 +22,7 @@ export default function Nav() {
     >
       <ChakraLink
         asChild
+        fontSize={"xl"}
         color="#C6DFEC"
         _dark={{
           color: "#BDBFCB",
@@ -31,6 +32,7 @@ export default function Nav() {
       </ChakraLink>
       <ChakraLink
         asChild
+        fontSize={"xl"}
         color="#C6DFEC"
         _dark={{
           color: "#BDBFCB",
@@ -40,6 +42,7 @@ export default function Nav() {
       </ChakraLink>
       <ClientOnly fallback={<Skeleton boxSize="8" />}>
         <IconButton
+          fontSize={"xl"}
           onClick={toggleColorMode}
           variant="ghost"
           size="md"
