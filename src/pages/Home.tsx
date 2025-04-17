@@ -1,12 +1,14 @@
 import {
-  Blockquote,
-  BlockquoteCaption,
   Box,
   Center,
+  Dialog,
+  DialogFooter,
   Heading,
+  Image,
   VStack,
 } from "@chakra-ui/react";
-
+import { LuHeart } from "react-icons/lu";
+import yorumi from "../assets/yorumi.png";
 export default function Home() {
   return (
     <Box
@@ -29,12 +31,14 @@ export default function Home() {
             Web stranica sa Chakra UI i React i Supabase
           </Heading>
 
-          <Blockquote.Root>
-            <BlockquoteCaption fontSize="2xl">
-              Potrebno je imati Bun, Supabase račun i ključeve kako bi korisnik
-              mogao da spoji sa tabelom.
-            </BlockquoteCaption>
-          </Blockquote.Root>
+          <Dialog.Root>
+            <DialogFooter fontSize={"2xl"}>
+              Tema je Yorumi
+              <Image src={yorumi} width={"10"} height={"10"} rounded={"xl"} />i
+              napravljena je sa
+              <LuHeart />
+            </DialogFooter>
+          </Dialog.Root>
         </VStack>
       </Center>
     </Box>

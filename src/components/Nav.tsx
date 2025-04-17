@@ -58,6 +58,7 @@ export default function Nav() {
           }}
         >
           {colorMode === "light" ? <LuSun /> : <LuMoon />}
+          {colorMode === "light" ? "Mist" : "Shade"}
         </IconButton>
       </ClientOnly>
     </HStack>
